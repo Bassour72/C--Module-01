@@ -1,15 +1,28 @@
 #include "Zombie.hpp"
 
-
 int main(void)
 {
     Zombie z("FOO");
     z.announce();
-    Zombie *zz = newZombie("TOO");
-    zz->announce();
+    Zombie* zz = newZombie("TOO");
+    if (zz) 
+    {
+        zz->announce();
+        delete zz;
+    } 
+    else 
+    {
+        std::cerr << "Failed to create Zombie TOO" << std::endl;
+    }
     Zombie* z1 = newZombie("Bob");
-    z1->announce();
-    delete z1;
-    delete zz;
+    if (z1) 
+    {
+        z1->announce();
+        delete z1;
+    } 
+    else 
+    {
+        std::cerr << "Failed to create Zombie Bob" << std::endl;
+    }
     return 0;
 }

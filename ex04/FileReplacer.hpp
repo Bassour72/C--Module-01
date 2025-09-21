@@ -1,4 +1,3 @@
-#pragma once
 #ifndef __FILE_REPLACER_HPP__
 #define __FILE_REPLACER_HPP__
 

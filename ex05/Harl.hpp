@@ -9,10 +9,11 @@ class Harl
 {
 private:
 	/* data */
-	void	debug(void);    // prints the DEBUG message
-	void	info(void);     // prints the INFO message
-	void	warning(void);  // prints the WARNING message
-	void	error(void);    // prints the ERROR message
+	void	debug(void);
+	void	info(void);
+	void	warning(void);
+	void	error(void);
+	
 	void	indexerror(void);
 
 public:

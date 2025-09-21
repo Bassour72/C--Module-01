@@ -61,4 +61,5 @@ void Harl::displayLevelMessage(std::string level)
     }
 }
 
+
 Harl::~Harl() {}

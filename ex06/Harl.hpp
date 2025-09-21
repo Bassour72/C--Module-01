@@ -1,11 +1,8 @@
-#pragma once
 #ifndef __HARL_HPP__
 #define __HARL_HPP__
 
 #include <string>
 #include <iostream>
-
-
 
 class Harl
 {

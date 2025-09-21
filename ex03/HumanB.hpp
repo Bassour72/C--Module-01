@@ -1,4 +1,3 @@
-#pragma once
 #ifndef __HUMANB_HPP__
 #define __HUMANB_HPP__
 
@@ -10,7 +9,7 @@ class HumanB
 {
 private:
 	std::string _name;
-	Weapon *_weapon; // pointer, starts as nullptr
+	Weapon *_weapon;
 
 public:
 	HumanB(std::string name);

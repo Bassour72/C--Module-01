@@ -1,10 +1,9 @@
-#pragma once
 #ifndef __ZOMBIE__H_
 #define __ZOMBIE__H_
 
 #include <iostream>
 #include <string>
-
+#define MAXZOMBIE  5
 class Zombie
 {
 private:
@@ -19,7 +18,6 @@ public:
     std::string getName(void);
 };
 
-// free functions
 Zombie* zombieHorde( int N, std::string name);
 
 #endif

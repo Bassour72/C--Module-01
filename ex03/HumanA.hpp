@@ -1,4 +1,3 @@
-#pragma once
 #ifndef __HUMANA_HPP__
 #define __HUMANA_HPP__
 #include <iostream>

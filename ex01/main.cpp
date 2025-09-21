@@ -1,14 +1,15 @@
 #include "Zombie.hpp"
 
-
 int main(void)
 {
-    Zombie *horde = zombieHorde(5, "toto");
-    horde[0].announce();
-    horde[1].announce();
-    horde[2].announce();
-    horde[3].announce();
-    horde[4].announce();
-    delete []horde;
+    Zombie *horde = zombieHorde(MAXZOMBIE, "toto");
+    if (!horde) 
+    {
+        std::cerr << "Failed to allocate zombies!" << std::endl;
+        return 1;
+    }
+    for (int i = 0; i < MAXZOMBIE; ++i)
+        horde[i].announce();
+    delete [] horde;
     return 0;
 }
